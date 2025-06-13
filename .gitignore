@@ -1,1 +1,7 @@
-.vs/
+# Typical .NET ignore rules
+*.user
+*.cache
+*.log
+*.vs
+bin/
+obj/

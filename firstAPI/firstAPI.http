@@ -1,6 +1,35 @@
-@firstAPI_HostAddress = http://localhost:5227
+@rootURL = http://localhost:5227
 
-GET {{firstAPI_HostAddress}}/weatherforecast/
+GET {{rootURL}}/weatherforecast/
 Accept: application/json
 
 ###
+GET {{rootURL}}/api/books
+Accept: application/json
+
+###
+GET {{rootURL}}/api/books/2
+Accept: application/json
+
+###
+POST {{rootURL}}/api/books
+Content-Type: application/json
+{
+  "id": 6,
+  "title": "C# Unlocked",
+  "author": "Alen Omeri",
+  "yearPublished": 2024
+}
+
+###
+PUT {{rootURL}}/api/books/5
+Content-Type: application/json
+{
+  "id": 5,
+  "title": "Moby-Dick",
+  "author": "Alen Omeri",
+  "yearPublished": 1851
+}
+
+###
+DELETE {{rootURL}}/api/books/4
