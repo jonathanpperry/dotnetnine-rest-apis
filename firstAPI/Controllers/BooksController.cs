@@ -96,7 +96,6 @@ namespace firstAPI.Controllers
 
             books.Remove(book);
             return NoContent(); 
-        
         }
     }
 }
